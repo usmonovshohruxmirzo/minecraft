@@ -1,5 +1,5 @@
 from ursina import *
-from ursina.prefabs.first_person_controller import FirstPersonController
+from player import Player
 
 app = Ursina()
 
@@ -10,6 +10,6 @@ ground = Entity(
     collider="mesh",
 )
 
-player = FirstPersonController()
+player = Player(position=(0,2,0))
 
 app.run()
