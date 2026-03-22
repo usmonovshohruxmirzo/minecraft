@@ -1,14 +1,10 @@
 from ursina import *
 from player import Player
+from world import World
 
 app = Ursina()
 
-ground = Entity(
-    model="plane",
-    scale=(200, 20, 200),
-    color=color.green,
-    collider="mesh",
-)
+World.init()
 
 player = Player(position=(0,2,0))
 
